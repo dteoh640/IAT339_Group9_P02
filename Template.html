@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet">
+   <!--  <link href="css/fonts.css" rel="stylesheet"> -->
+
+  </head>
+
+  <body>
+
+    <h1>Style Guide</h1>
+
+
+    <nav class="top-nav">
+      
+      <p>
+        Go to:
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+      </p>
+
+    </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Default Button styling section -->
+      <section>
+
+        <h2>Navigation Button</h2>
+
+        <h3>CSS selector:</h3>
+          <p>.nav-button</p>
+
+        <h3>Sample code:</h3>
+          <code>&lt;li&gt; &lt;a href="#Wines" class="nav-button" &gt;Nav Button&lt;/a&gt; &lt;/li&gt;</code>
+
+        <h3>Rendered element:</h3>
+          <a class="nav-button" href="#">Nav Button</a> 
+
+      </section>
+
+      <!-- Default in-text link styling section -->
+      <section>
+        <h2>In-text link</h2>
+
+        <h3>CSS selector:</h3>
+          <p> .in-text-link </p>
+
+        <h3>Sample code:</h3>
+          <code> &lt;a class="in-text-link " href="#web-link">the link&lt;/a&gt; </code>
+
+        <h3>Rendered element:</h3>
+          <a class="in-text-link " href="#web-link">the link</a> 
+
+      </section>
+
+      <!-- Default Submit/Reset Button styling section -->
+      <section>
+
+        <h2>Submit/Reset Buttons</h2>
+
+        <h3>CSS selector:</h3>
+          <p>input[type=submit] <br> input[type=reset] </p>
+          
+
+        <h3>Sample code:</h3>
+        <pre class="lineHeight">
+<code>&lt;input type="reset" value="Reset"&gt;
+ &lt;input type="submit" value="Submit"&gt;</code>
+        </pre>
+
+        <h3>Rendered element:</h3>
+
+        <input class="button" type="reset" value="Reset">
+        <input class="button" type="submit" value="Submit">
+
+
+      </section>
+
+
+      <!-- Default Text Input field styling section
+      code inspired from https://www.w3schools.com/css/tryit.asp?filename=trycss_forms
+       -->
+      <section>
+        <h2>Text Input Field</h2>
+
+          <h3>CSS selector:</h3>
+          <p>  input[type=text] </p>
+           
+
+          <h3>Sample code:</h3>
+          <pre class="lineHeight">
+<code>&lt;form method="feedback" action="#"&gt;
+   &lt;label for="FirstName">First Name:&lt;/label&gt;
+   &lt;input type="text" id="FirstName" placeholder="First Name:"&gt;
+  &lt;/form&gt;</code>
+          </pre>
+
+        <h3>Rendered element:</h3>
+
+        <form method="feedback" action="#">
+
+            <label for="FirstName">First Name:</label>
+      
+            <input type="text" id="FirstName" placeholder="First Name:">
+
+
+            <label for="LastName">Last Name:</label>
+            <input type="text" id="LastName" placeholder="Last Name:">
+
+
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" placeholder="Email:">
+
+
+
+         </form>
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <!-- Default headings section -->
+      <section>
+        <h2>Headings</h2>
+
+        <h3>CSS selector:</h3>
+          <p>  .heading <br> .sub-heading <br> .small-heading</p>
+       
+
+        <h3>Sample code:</h3>
+        <pre class="lineHeight">
+<code>&lt;h1 class="heading"&gt; This is my Heading  &lt;/h1&gt;
+ &lt;h2 class="sub-heading"&gt; This is my sub-heading  &lt;/h2&gt;
+ &lt;h3 class="small-heading"&gt; This is my third heading &lt;/h3&gt;</code>
+        </pre>
+
+        <h3>Rendered element:</h3>
+          <h1 class="heading"> This is my Heading </h1>
+          <h2 class="sub-heading"> This is my sub-heading </h2>
+          <h3 class="small-heading"> This is my third heading </h3>
+
+
+      </section>
+
+      <!-- Default paragraphs section -->
+      <section>
+        <h2>Paragraphs</h2>
+
+        <h3>CSS selector:</h3>
+          <p> .paragraph </p>
+
+        <h3>Sample code:</h3>
+          <code> &lt;p class="paragraph"&gt; This is my paragraph&lt;/p&gt;  </code>
+
+        <h3>Rendered element:</h3>
+          <p class="paragraph"> This is my paragraph</p>
+
+
+      </section>
+
+      <!-- Default bulleted lists section -->
+      <section>
+        <h2>Bulleted Lists</h2>
+
+
+          <h3>CSS selector:</h3>
+            <p> .bulletedList <br> .bulletedList li svg <br> .bulletedList li p </p>
+        
+          <h3>Sample code:</h3>
+          <pre class="lineHeight">
+<code>&lt;ul class="bulletedList"&gt;  
+   &lt;li&gt; 
+     &lt;img src="img/bulleted2.png" alt="" width="16"&gt;
+     &lt;p class="paragraph">  this is my bulleted Lists &lt;/p&gt;   
+   &lt;/li&gt;
+ &lt;/ul&gt;</code>
+          </pre>
+
+          <h3>Rendered element:</h3>
+
+
+             <ul class="bulletedList">  
+                
+                <li> 
+                    <!--<svg width="20" height="20"> <rect width="20" height="20"  /> 
+                  </svg>-->
+                  <img src="img/bulleted2.png" alt="" width="16">
+                   <p class="paragraph">  this is my bulleted Lists </p>   
+                </li>
+
+      
+                <li> 
+                  <img src="img/bulleted2.png" alt="" width="16">
+                  <p class="paragraph">  this is my bulleted Lists </p> 
+                </li>
+             </ul>
+
+      </section>
+
+      <!-- Default numbered lists section -->
+      <section>
+        <h2>Numbered Lists</h2>
+
+         <h3>CSS selector:</h3>
+            <p>  ol li </p>
+
+          <h3>Sample code:</h3>
+          <pre class="lineHeight">
+<code>&lt;ol class="numberList"&gt;
+     &lt;li class="paragraph">  this is my bulleted Lists &lt;/li&gt;
+ &lt;/ol&gt;</code>
+                        </pre>
+          <h3>Rendered element:</h3>
+
+            <ol>  
+              <li class="paragraph">  this is my numbered list</li>
+
+              <li class="paragraph">  this is my numbered list</li>
+            </ol>
+
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+    <!--  Main Navigation interaction styling section -->
+      <section>
+        <h2>Main Navigation</h2>
+        <h3>CSS selector:</h3>
+          <p>.nav-main</p>
+
+        <h3>Sample code:</h3>
+        <pre class="lineHeight">
+<code>&lt;nav class="nav-main"&gt;
+   &lt;ul&gt; 
+     &lt;li&gt;&lt;a href="#Wines" class="nav-button">Wines&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+ &lt;/nav&gt;</code>
+        </pre>
+
+        <h3>Rendered element:</h3>
+
+         <nav class="nav-main">
+            <ul> 
+
+                <li><a href="#Wines" class="nav-button">Wines</a></li>
+                <li><a href="#About" class="nav-button">About</a></li>
+                <li><a href="#Contact" class="nav-button">Contact</a></li>
+                <li><a href="#Cart" class="nav-button">Cart</a></li>
+                
+            </ul>
+        </nav>
+
+      </section>
+
+      <!--  Product Listing styling section -->
+      <section>
+        <h2>Product Listing</h2>
+
+        <h3>CSS selector:</h3>
+        <p> .grid-wrapper <br> .product-block</p>
+
+        <h3>Sample code:</h3>
+          <code>
+            &lt;div class="grid-wrapper"&gt;
+
+
+               &lt;div class="product-block"&gt;
+                 &lt;p&gt; Wine image &lt;/p&gt;
+               &lt;/div&gt;
+
+             &lt;/div&gt;
+
+          </code>
+
+        <h3>Rendered element:</h3>
+          <div class="ProductContainer">
+            <div class="search">  
+              <ul>
+                <li class="spacing">Logo</li>
+                <li class="spacing">Quick search</li>
+                <li class="spacing">Navigation Bar</li>
+              </ul>
+            </div>
+
+
+             <div class="grid-wrapper2">
+
+
+              <div class="product-block">
+                <div class="image-container">
+                  <p class="image">  Wine image </p>
+                  <div class="AddButton">   Add </div>
+                </div>
+                  <p class="discription"> discription </p>
+              </div>
+
+
+              <div class="product-block">
+                <div class="image-container">
+                  <p class="image">  Wine image </p>
+                  <div class="AddButton">   Add </div>
+                </div>
+                 <p class="discription"> discription </p>
+              </div>
+
+              <div class="product-block">
+                 <div class="image-container">
+                  <p class="image">  Wine image </p>
+                  <div class="AddButton">   Add </div>
+                </div>
+                 <p class="discription"> discription </p>
+              </div>
+
+              <div class="product-block">
+                 <div class="image-container">
+                  <p class="image">  Wine image </p>
+                  <div class="AddButton">   Add </div>
+                </div>
+                 <p class="discription"> discription </p>
+              </div>
+
+              <div class="product-block">
+                 <div class="image-container">
+                  <p class="image">  Wine image </p>
+                  <div class="AddButton">   Add </div>
+                </div>
+                 <p class="discription"> discription </p>
+              </div>
+
+            </div>
+          </div>
+      </section>
+
+      <!--  website grid structure styling section -->
+      <section>
+        <h2> website grid structure</h2>
+
+        <h3>CSS selector:</h3>
+          <p> .grid-wrapper <br> .block <br> .col</p>
+
+
+
+        <h3>Sample code:</h3>
+          <code>
+           &lt;div class="container grid-wrapper"&gt;
+
+
+                &lt;div class="block"&gt;
+
+                   &lt;div class="col"&gt;
+                      &lt;h3&gt; col &lt;/h3&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+
+                &lt;div class="block"&gt; <br>
+
+                  <!-- difine column -->
+                
+                            &lt;div class="col"&gt;  
+                              &lt;h3&gt; col &lt;/h3&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class="col"&gt;  
+                              &lt;h3> col &lt;/h3&gt;
+                            &lt;/div&gt;
+
+                              &lt;div class="col"&gt;  
+                              &lt;h3> col &lt;/h3&gt;
+                            &lt;/div&gt;
+               
+                &lt;/div&gt;
+
+          </code>
+
+         <h3>Rendered element:</h3>
+         <div class="container grid-wrapper">
+
+
+                <div class="block">
+
+                   <div class="col">  
+                      <h3> col </h3>
+                    </div>
+
+                </div>
+
+
+                <div class="block">
+
+                  <!-- difine column -->
+                
+                            <div class="col">  
+                              <h3> col </h3>
+                            </div>
+
+                            <div class="col">  
+                              <h3> col </h3>
+                            </div>
+
+                              <div class="col">  
+                              <h3> col </h3>
+                            </div>
+               
+                </div>
+
+
+
+                <div class="block">
+
+                        <div class="col">  
+                          <h3> col </h3>
+                        </div>
+
+                        <div class="col">  
+                          <h3> col </h3>
+                        </div>
+
+                </div>
+
+
+        </div>
+      </section>
+
+      <!--  website colour swatches section -->
+      <section>
+        <h2> website colour swatches</h2>
+          <div class="color"> 
+             <p class="white">  #ffffff </p>
+            <p class="backgroungColor">  #f0eee8 </p>
+            <p class="highLight">  #a68676 </p>
+            <p class="hupertext">  #ffa31a </p>
+            <p class="black">  #000000 </p>
+          </div>
+      </section>
+
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+  </body>
+</html>
