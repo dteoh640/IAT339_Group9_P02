@@ -1,0 +1,277 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Palatino", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    background-color: #F7F5F0;
+    line-height: 1.15;
+}
+
+body{
+    width:100%;
+    margin:auto;
+    padding-top:1em;
+}
+
+.brand{
+    width:88%;
+    margin:auto;
+    height:auto;
+    display:flex;
+    justify-content: space-between;
+}
+
+.navbar ul{
+    display:flex;
+    overflow:hidden;  
+    list-style-type:none;
+    padding:0;
+    width:100%;
+}
+
+.navbar ul li{
+    padding:.5em 3.5em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .11em;
+    font-size: .9em;
+}
+
+.navbar>ul>li>a{
+    text-decoration: none;
+    background: linear-gradient(to bottom, #a68676 0%, #210e03 100%); /*https://codepen.io/leocampos/pen/pPwwNR*/
+    -webkit-background-clip: text; /*https://codepen.io/leocampos/pen/pPwwNR*/
+    -webkit-text-fill-color: transparent; /*https://codepen.io/leocampos/pen/pPwwNR*/
+    color: #a68676;
+}
+
+.selected{
+    background: linear-gradient(to bottom, #f5dfb0 0%, #e5bf76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#e5bf76;
+    text-decoration: none;
+    border-bottom: 2.5px solid #e5bf76;
+    font-weight:bold;
+}
+
+.navbar a:hover, .navbar a:focus, .navbar a:active {
+    background: linear-gradient(to bottom, #f5dfb0 0%, #e5bf76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#e5bf76;
+    text-decoration: none;
+}
+
+main{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.typesofwines{
+    flex:22%;
+    background:#fffdf7;
+    margin-top:2em;
+}
+
+.typesofwines ul{
+    display:block;  
+    list-style-type:none;
+    padding:5em 0;
+    text-align: center;
+    position: fixed;
+    width: 22%;
+    margin:0px auto;
+}
+
+.typesofwines ul li{
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .77em;
+    line-height: 4em;
+}
+
+.typesofwines>ul>li>a{
+    text-decoration: none;
+    background: linear-gradient(to bottom, #a68676 0%, #210e03 100%); /*https://codepen.io/leocampos/pen/pPwwNR*/
+    -webkit-background-clip: text; /*https://codepen.io/leocampos/pen/pPwwNR*/
+    -webkit-text-fill-color: transparent; /*https://codepen.io/leocampos/pen/pPwwNR*/
+    color: #a68676;
+}
+
+.typesofwines a:hover, .typesofwines a:focus, .typesofwines a:active {
+    background: linear-gradient(to bottom, #f5dfb0 0%, #e5bf76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#e5bf76;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.productlist{
+    flex:78%;
+    margin-top:2em;
+    position: relative;
+}
+
+.productlist img{
+    z-index:-1;
+}
+
+.productlist h3{
+    position: absolute;
+    top:2.5%;
+    left:5.5%;
+    letter-spacing: .4em;
+    font-size: .9em;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #210e03;
+    z-index:1;
+}
+
+.productlist h2{
+    position: absolute;
+    top:3%;
+    left:5.5%;
+    font-family: "Garamond", serif;
+    letter-spacing: .11em;
+    font-size: 2.5em;
+    text-transform: capitalize;
+    color: #a68676;
+    z-index:1;
+}
+
+.productlist .subtitle{
+    position: absolute;
+    top:10%;
+    left:57%;
+    letter-spacing: .2em;
+    font-size: .77em;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #210e03;
+    z-index:1;
+}
+
+.productlist h1{
+    position: absolute;
+    top:11%;
+    left:57%;
+    font-family: "Garamond", serif;
+    letter-spacing: .11em;
+    font-size: 3em;
+    text-transform: capitalize;
+    background: linear-gradient(to bottom, #f5dfb0 0%, #e5bf76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#e5bf76;
+    z-index:1;
+}
+
+.productlist .addbtn1{
+    position: absolute;
+    top:20%;
+    left:57%;
+    letter-spacing: .1em;
+    font-size: 1em;
+    text-transform: capitalize;
+    background: none;
+    font-weight: 600;
+    color:#210e03;
+    border:1.5px solid #e5bf76;
+    border-radius: 20px;
+    padding:1em 2em;
+    z-index:1;
+    transition:background-color 0.25s;
+}
+
+.productlist>button>span{
+    padding-right:3.5em;
+}
+
+.productlist button:hover, .productlist button:focus, .productlist button:active{
+    text-decoration: none;
+    background-color: #210e03;
+    border:1.5px solid #210e03;
+    color: #a68676;
+} 
+
+.productlist .sentences{
+    width:55%;
+    font-family: "Garamond", serif;
+    margin:50px auto 80px auto;
+    line-height: 2.25;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.allProducts{
+    width:100%;
+    margin:60px auto;
+}
+
+.allProducts h4{
+    width:98%;
+    margin:10px auto;
+    color: #a68676;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.allProducts>h4>span{
+    font-weight: 100;
+    letter-spacing: .29em;
+    font-size: .9em;
+    color: #210e03;
+}
+
+.listRow{
+    margin:0px auto 100px auto;
+    height:auto;
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
+    width:100%;
+}
+
+.listRow div img{
+    width:95%;
+}
+
+.listRow div p{
+    font-family: "Garamond", serif;
+    font-size: 1.2em;
+    color: #210e03;
+}
+
+.listRow .addbtn2{
+    letter-spacing: .1em;
+    font-size: .9em;
+    text-transform: capitalize;
+    background: none;
+    font-weight: 600;
+    color:#210e03;
+    border:1.5px solid #e5bf76;
+    border-radius: 20px;
+    padding:.9em 1.5em;
+    transition:background-color 0.25s;
+}
+
+.listRow .addbtn2 span{
+    padding-right:2.5em;
+}
+
+footer{
+    background-color: #F7F5F0;
+    width:100%;
+    margin: 12px auto;
+    text-align: center;
+    font-family: "Garamond", serif;
+    font-size:.8em;
+    letter-spacing: .05em;
+    color:#210e03;
+}
