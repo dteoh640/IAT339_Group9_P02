@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>website template for Victor Winery</title>
+    <link href="css/checkout.css" rel="stylesheet">
+
+  </head>
+
+
+  <body>  
+
+  	        <!--  Main Navigation interaction styling section -->
+      <heading>
+            <section class="brand">
+                <a href="home.html" alt="home"><img src="img/brandv2.png" alt="" width="150" height="166.38"></a>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="home.html" alt="Home">Home</a></li>
+                        <li>  <a href="wine.html" alt="wine">     Wines   </a>      </li> <!--When the navigation tab is selected, change to this condition-->
+                        <li  class="selected"> <a href="chekcout.html" alt="cart">Cart</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </heading>
+
+
+<!-- checkou visual  -->
+
+	  <div class = "checkoutTruck">  
+
+		        <img class= "truck" src="img/shippingtruck.png" alt="img missing" width ="100px">  
+		       
+		</div>
+
+        <div class = "checkoutBar">  
+        	
+        	<img class = "bar"src="img/bar.png" alt="img missing"> 
+
+        </div>
+
+	
+        <!-- check out steps -->
+
+  	<section class ="shipping">   
+
+  		<form method="post" action="#">
+                <h2>Shipping</h2>
+
+	                <div class="Grid">
+	                	<div class= "col">  
+
+	                    <div class="Grid-content">
+	                        <label for="inputFirstNameShipping">First Name:</label> <br> 
+	                        <input id="inputFirstNameShipping" name="First Name" placeholder="First Name" type="text">
+	                    </div>
+
+	                    <div class="Grid-content">
+	                        <label for="inputLastNameShipping">Last Name:</label> <br> 
+	                        <input id="inputLastNameShipping" name="Last Name" placeholder="Last Name" type="text">
+	                    </div>
+	                </div>
+
+                <!-- <div class="Grid"> -->
+                	<div class="col" >
+                        <div class="Grid-content">
+                            <label for="inputAddress1">Street Address:</label> <br> 
+                            <input id="inputAddress1" name="Street Address" placeholder="Street Address, P.O. box" type="text">
+                        </div>
+
+                        <div class="Grid-content">
+                            <label for="inputAddress2">Address Additional:</label>  <br> 
+                            <input id="inputAddress2" name="Address Additional" placeholder="Apartment, suite, unit etc..." type="text">
+                        </div>
+
+                    </div>
+
+					<div class= "col" >
+                        <div class="Grid-content">
+                            <label for="selectCountry">Country:</label>
+                            <select name="selectCountry" id="selectCountry">
+                                <option value="canada">Canada</option>
+                                <option value="states">United States</option>
+                            </select>
+                        </div>
+
+                        <div id="cityDiv" class="Grid-content">
+                            <label for="inputCity">City:</label> <br> 
+                            <input id="inputCity" name="City" placeholder="Delta" type="text">
+                        </div>
+
+
+                    </div>
+
+                    <div class="col" >
+                        <div id="provinceDiv" class="Grid-content">
+                            <label for="inputState">State/Province:</label> <br>
+                            <input id="inputState" placeholder="British Columbia" name="State/Province" type="text">
+                        </div>
+
+                        <div id="postalDiv" class="Grid-content">
+                            <label for="inputZip">Zip/Postal:</label> <br> 
+                            <input id="inputZip" name="Zip/Postal Code" placeholder="*** ***" type="text">
+                        </div>
+
+                     </div>
+
+
+                     <div class="col" > 
+            			<input type="submit" value="Submit">
+
+            		</div>
+           </div>
+
+
+      
+      	</form>
+
+
+  	</section>
+
+
+
+
+
+  </body>
+
+
+
+
+
+  </html>
+
+
+

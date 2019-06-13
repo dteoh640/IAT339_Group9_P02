@@ -1,0 +1,142 @@
+*/
+*, *::after, *::before{
+  box-sizing: border-box;
+
+}
+body {
+  /*font-size: 48px;*/
+  margin: auto;
+  font-family: sans-serif;
+/*  padding: 2rem;*/
+
+}
+
+
+
+p{
+    font-size: 16px;
+    line-height: 2;
+    text-align: left;
+    margin-top: 1em;
+   /* min-width: 25em;*/
+}
+
+
+
+
+/* Styling for the navigation button */
+.brand{
+    width:88%;
+    margin:auto;
+    height:auto;
+    display:flex;
+    justify-content: space-between;
+}
+
+.navbar ul{
+    display:flex;
+    overflow:hidden;  
+    list-style-type:none;
+    padding:0;
+    width:100%;
+}
+
+.navbar ul li{
+    padding:.5rem 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .11rem;
+    font-size: .9rem;
+}
+
+.navbar>ul>li>a{
+    text-decoration: none;
+    background: linear-gradient(to bottom, #a68676 0%, #210e03 100%); /*https://codepen.io/leocampos/pen/pPwwNR*/
+    -webkit-background-clip: text; /*https://codepen.io/leocampos/pen/pPwwNR*/
+    -webkit-text-fill-color: transparent; /*https://codepen.io/leocampos/pen/pPwwNR*/
+    color: #a68676;
+}
+
+.selected{
+    background: linear-gradient(to bottom, #f5dfb0 0%, #e5bf76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#e5bf76;
+    text-decoration: none;
+    border-bottom: 2.5px solid #e5bf76;
+    font-weight:bold;
+}
+
+.navbar a:hover, .navbar a:focus, .navbar a:active {
+    background: linear-gradient(to bottom, #f5dfb0 0%, #e5bf76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#e5bf76;
+    text-decoration: none;
+}
+
+
+
+/*visual bar */
+
+.checkoutBar {
+	text-align: center;
+	
+}
+
+.checkoutBar .truck {
+	width: 10%;
+}
+
+.checkoutBar .bar {
+	width: 75%;
+	display: inline-block;
+	height: auto;
+}
+
+.checkoutTruck {
+	margin-left: 12em;
+	margin-top: 10em;
+}
+
+/*shipping*/
+.shipping {
+	margin: 5em;
+}
+
+.Grid {
+	margin-left:8em;
+	margin-top: 10em;
+	display: block;
+}
+
+
+.col {
+	display: flex;
+	margin-top: 2em;
+	/*flex-direction: column;*/
+	justify-content: space-between;
+}
+
+
+.Grid-content {
+	flex: 1 1 auto;
+
+}
+
+
+.Grid-content label{
+  line-height: 2em;
+  font-family: sans-serif;
+/*  display: inline-block;
+  width: 10em;
+  text-align: left;
+  padding-left: 0.5em;*/
+}
+
+.Grid-content input  {
+  width: 50%;
+  font-family: sans-serif;
+}
+
+
