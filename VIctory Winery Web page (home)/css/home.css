@@ -339,6 +339,7 @@ figcaption {
 }
 
 .event_button {
+
     text-align: center;
     margin: 30% auto;
 
@@ -360,7 +361,7 @@ figcaption {
     z-index:1;
     transition:background-color 0.25s, color 0.25s;
 
-       color: black;
+    color: black;
     font-weight: bold;
     font-style: normal;
     
@@ -423,6 +424,11 @@ figcaption {
     width: 100%;
     height: auto;
 
+  }
+
+  .event_button {
+    position: relative;
+    right: 0.7em;
   }
   
 }
