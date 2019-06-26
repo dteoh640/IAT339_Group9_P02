@@ -9,6 +9,12 @@ h1 {
     color: #a68676;
 }
 
+h2  {
+     font-family: "Garamond", serif;
+  font-size: 32px;
+  font-weight: 1;
+}
+
 
 p{
     font-size: 16px;
@@ -23,7 +29,93 @@ div {
   background-color: grey;
 }
 
+figcaption {
+  font-family: "Palatino";
+  font-size: 12px;
+  text-align: left;
+  position: absolute;
+     bottom: 0.5em;
+     left: 11%;
+      width: 32em;
+      height: auto;
+      color: grey;
+}
 
+<<<<<<< HEAD
+=======
+
+
+
+.brand{
+    width:88%;
+    margin:auto;
+
+   /* height:0;*/
+    z-index: 2;
+  /*  background-color: black;*/
+    display: flex;
+    justify-content: space-between;
+    
+}
+.brand img {
+  position: fixed;
+  top: 0;
+  width: 3em;
+  height: auto;
+  margin-left: -2em;
+  z-index: 10;
+  transition: 1s;
+}
+
+.navbar ul{
+    margin: 2em 0 0 0 ;
+    display:flex;
+    overflow:hidden;  
+    list-style-type:none;
+    
+    font-family: "Garamond", serif;
+    top:0.5em;
+    z-index: 2;
+    padding:0;
+    width:100%;
+}
+
+.navbar ul li{
+    padding:.5rem 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .11rem;
+    font-size: .9rem;
+}
+
+.navbar>ul>li>a{
+    text-decoration: none;
+    background: linear-gradient(to bottom, #a68676 0%, #210e03 100%); /*https://codepen.io/leocampos/pen/pPwwNR*/
+    -webkit-background-clip: text; /*https://codepen.io/leocampos/pen/pPwwNR*/
+    -webkit-text-fill-color: transparent; /*https://codepen.io/leocampos/pen/pPwwNR*/
+    color: #a68676;
+}
+
+.selected{
+    background: linear-gradient(to bottom, #f5dfb0 0%, #e5bf76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#e5bf76;
+    text-decoration: none;
+    border-bottom: 2.5px solid #e5bf76;
+    font-weight:bold;
+}
+
+.navbar a:hover, .navbar a:focus, .navbar a:active {
+    background: linear-gradient(to bottom, #f5dfb0 0%, #e5bf76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#e5bf76;
+    text-decoration: none;
+}
+
+
+>>>>>>> master
 /* 
   video section*/
 
@@ -51,15 +143,15 @@ div {
 
 
  .frame{
-  position: relative;
-    padding: 2em 20% 2em 20%; 
+   position: relative;
+    padding: 2em 15% 2em 15%; 
 
     background-color: #f0eee8;
 
   }
 
   .content {
-    padding: 1.2em 20% 5em 20%;
+    padding: 1.2em 30% 2em 30%;
     text-align: center;
     border-style: solid;
     border-width: 3px;
@@ -67,9 +159,20 @@ div {
     background-color: #f0eee8;
   }
 
+  .dropcap {
+    float: left;
+    font-size: 60px;
+    line-height: 1;
+    margin-right: 9px;
+    color: #a68676;
+    font-family: "Times New Roman", Times, serif;
+    
+  }
+
   .secondpart {
 
-    padding-left: 10em;
+    /*padding-left: 10em;*/
+    /*padding-bottom: 5em;*/
   }
 
   .content h1{
@@ -81,18 +184,30 @@ div {
   text-align: justify;
 }
 
+<<<<<<< HEAD
   .imagecontent {
      position: absolute;
      top: 19.5em;
      left: 24%;
       width: 16em;
+=======
+ 
+
+  .imagecontent img {
+    position: absolute;
+  
+     bottom: 1em;
+     left: 11%;
+      width: 8em;
+>>>>>>> master
       height: auto;
   }
 
 
-  @media (max-width: 1500px) {
+
+  @media (max-width: 1550px) {
   
-  .imagecontent {
+  .imagecontent img{
      position: relative;
      top: 1em;
       left: 0em;
@@ -104,13 +219,23 @@ div {
      padding-bottom: 3em;
     
   }
+
+  figcaption {
+    position: relative;
+     top: 4em;
+     
+    
+     height: auto;
+     width: 80%;
+  }
   .secondpart {
 
     padding-left: 0em;
+    padding-bottom: 0em;
   }
 
   .content {
-    padding: 1.2em 5% 1em 5%;
+    padding: 1.2em 5% 2em 5%;
   }
 
   .content>p{
@@ -133,7 +258,14 @@ div {
 
   }
 
+
+
+
 /*update events section*/
+
+.event_section  {
+  background-color: #F8F8FF;
+}
   .events {
     padding: 0 11% 0 11%;
     display:flex;
@@ -157,43 +289,128 @@ div {
 
 
    .title{
-    font-size: 40px;
+    /*display: inline-block;*/
+    width: 30%;
+    margin: 0 auto;
     text-align: center;
+<<<<<<< HEAD
     background-color: #F7F5F0;
     padding: 1em 0em 1em 0em;
+=======
+    background-color: #F8F8FF;
+    padding: 1em 0em 0em 0em;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+>>>>>>> master
   }
 
   .eventimage{
-    
-    /*padding: 5em;*/
     width: 100%;
     height: auto;
     
-    /*background-color: grey;*/
+
   }
 
 
   .eventlist {
+    
+   /* margin-bottom: 30px;*/
     margin: 2em 0.5em 2em 0.25em;
     background-color: #F7F5F0;
   }
+
+  /* inspired from my IAT 235 final project*/
+
+ .event_moreinfo {
+
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+
+   .event_moreinfo .event_hover {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(243, 243, 243, 0.5);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    opacity: 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    color: #333;
+}
+
+.event_button {
+
+    text-align: center;
+    margin: 30% auto;
+
+    padding: 10px;
+    width: 100%;
+  
+    font-size: 16px;
+    letter-spacing: 2px;
+
+
+
+    text-transform: capitalize;
+    background: none;
+    font-weight: 600;
+    
+    border:1.5px solid #e5bf76;
+    border-radius: 20px;
+
+    z-index:1;
+    transition:background-color 0.25s, color 0.25s;
+
+    color: black;
+    font-weight: bold;
+    font-style: normal;
+    
+    
+}
+
+ 
+
+.event_link {
+  text-decoration: none;
+}
+
+
+.event_moreinfo:hover .event_hover{
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+ .event_button:hover, .event_button:active, .event_button:focus
+ {
+    opacity: 1;
+    text-decoration: none;
+    text-decoration: none;
+    background-color: #210e03;
+    border:1.5px solid #210e03;
+    color: #a68676;
+
+
+}
+
+
 
 
 @media (max-width: 1200px) {
 
     .events {
        padding: 0 1em 0 1em;
-   /* margin: 1em 2em 0em 2em;*/
+   
     
   }
 
-/*  .title{
-    margin-left: -5em;
-  }
-
- .events .firstimg {
-    margin-top: 2em;
-  }*/
 
 }
 
@@ -214,6 +431,11 @@ div {
     width: 100%;
     height: auto;
 
+  }
+
+  .event_button {
+    position: relative;
+    right: 0.7em;
   }
   
 }
