@@ -227,6 +227,57 @@ main{
     }
     
   }
+
+  section .review {
+    margin: 20em 0 0 1em;
+  }
+
+   .review-title{
+        display: block;
+        width: 100%;
+        font-size: 32px;
+        border-bottom: 1px solid;
+        padding-bottom: 5px;
+        color: black;
+  }
+
+  form {
+  /*  display: inline-block;*/
+    padding-bottom: 5em;
+    margin: auto;
+
+  }
+
+
+
+  .btn {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+
+
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+
+
+  border:3px solid #1F1010; 
+  color:#1F1010; 
+                    
+    background-color:rgba(255, 255, 255, 0.5); 
+    font-size:75%; 
+    font-weight:bold; 
+    padding:5px 10px;
+
+
+}
+
+.btn:hover {
+  background-color: #a68676;
+  color: white;
+}
   
 
 /*
