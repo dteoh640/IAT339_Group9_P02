@@ -139,7 +139,7 @@ main{
     padding-right:3.5em;
 }
 
-.featuredTitle button:hover, .featuredTitle button:focus, .featuredTitle button:active{
+.productlist button:hover, .productlist button:focus, .productlist button:active{
     text-decoration: none;
     background-color: #210e03;
     border:1.5px solid #210e03;
