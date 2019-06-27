@@ -82,7 +82,7 @@ main{
     z-index:1;
 }
 
-.productlist .subtitle{
+.featuredTitle{
     position: absolute;
     top:10%;
     left:57%;
@@ -94,10 +94,21 @@ main{
     z-index:1;
 }
 
-.productlist h1{
+/*
+.productlist .subtitle{
     position: absolute;
-    top:11%;
+    top:10%;
     left:57%;
+    letter-spacing: .2em;
+    font-size: .77em;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #210e03;
+    z-index:1;
+}*/
+
+.productlist h1{
+    position: relative;
     font-family: "Garamond", serif;
     letter-spacing: .11em;
     font-size: 3em;
@@ -110,9 +121,7 @@ main{
 }
 
 .productlist .addbtn1{
-    position: absolute;
-    top:20%;
-    left:57%;
+    position: relative;
     letter-spacing: .1em;
     font-size: 1em;
     text-transform: capitalize;
@@ -209,6 +218,16 @@ main{
     padding-top:.5em;
     margin:auto;
 }
+
+@media (max-width: 900px) {
+  
+    .listRow{
+        display:block;
+        margin:auto;
+    }
+    
+  }
+  
 
 /*
 footer{

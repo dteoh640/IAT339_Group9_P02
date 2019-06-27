@@ -4,7 +4,7 @@
 
 h1 {
    font-family: "Garamond", serif;
-   font-weight: 1;
+   font-weight: 1em;
   /* font-size: 48px;*/
     color: #a68676;
 }
@@ -15,6 +15,12 @@ h2  {
   font-weight: 1;
 }
 
+h4 {
+  font-family: "Garamond", serif;
+  color:#000;
+  font-size: 1.5em;
+  font-weight: normal;
+}
 
 p{
     font-size: 16px;
@@ -41,81 +47,6 @@ figcaption {
       color: grey;
 }
 
-<<<<<<< HEAD
-=======
-
-
-
-.brand{
-    width:88%;
-    margin:auto;
-
-   /* height:0;*/
-    z-index: 2;
-  /*  background-color: black;*/
-    display: flex;
-    justify-content: space-between;
-    
-}
-.brand img {
-  position: fixed;
-  top: 0;
-  width: 3em;
-  height: auto;
-  margin-left: -2em;
-  z-index: 10;
-  transition: 1s;
-}
-
-.navbar ul{
-    margin: 2em 0 0 0 ;
-    display:flex;
-    overflow:hidden;  
-    list-style-type:none;
-    
-    font-family: "Garamond", serif;
-    top:0.5em;
-    z-index: 2;
-    padding:0;
-    width:100%;
-}
-
-.navbar ul li{
-    padding:.5rem 3.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .11rem;
-    font-size: .9rem;
-}
-
-.navbar>ul>li>a{
-    text-decoration: none;
-    background: linear-gradient(to bottom, #a68676 0%, #210e03 100%); /*https://codepen.io/leocampos/pen/pPwwNR*/
-    -webkit-background-clip: text; /*https://codepen.io/leocampos/pen/pPwwNR*/
-    -webkit-text-fill-color: transparent; /*https://codepen.io/leocampos/pen/pPwwNR*/
-    color: #a68676;
-}
-
-.selected{
-    background: linear-gradient(to bottom, #f5dfb0 0%, #e5bf76 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color:#e5bf76;
-    text-decoration: none;
-    border-bottom: 2.5px solid #e5bf76;
-    font-weight:bold;
-}
-
-.navbar a:hover, .navbar a:focus, .navbar a:active {
-    background: linear-gradient(to bottom, #f5dfb0 0%, #e5bf76 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color:#e5bf76;
-    text-decoration: none;
-}
-
-
->>>>>>> master
 /* 
   video section*/
 
@@ -145,7 +76,6 @@ figcaption {
  .frame{
    position: relative;
     padding: 2em 15% 2em 15%; 
-
     background-color: #f0eee8;
 
   }
@@ -169,12 +99,6 @@ figcaption {
     
   }
 
-  .secondpart {
-
-    /*padding-left: 10em;*/
-    /*padding-bottom: 5em;*/
-  }
-
   .content h1{
      border-bottom: 1px solid;
     padding-bottom: 5px;
@@ -184,22 +108,11 @@ figcaption {
   text-align: justify;
 }
 
-<<<<<<< HEAD
-  .imagecontent {
+.imagecontent img{
      position: absolute;
      top: 19.5em;
      left: 24%;
       width: 16em;
-=======
- 
-
-  .imagecontent img {
-    position: absolute;
-  
-     bottom: 1em;
-     left: 11%;
-      width: 8em;
->>>>>>> master
       height: auto;
   }
 
@@ -209,18 +122,18 @@ figcaption {
   
   .imagecontent img{
      position: relative;
-     top: 1em;
+     top: 0em;
       left: 0em;
       bottom: 0em;
     
      height: auto;
      width: 70%;
      padding-top:1em;
-     padding-bottom: 3em;
+     padding-bottom: 1em;
     
   }
 
-  figcaption {
+  /*figcaption {
     position: relative;
      top: 4em;
      
@@ -228,19 +141,25 @@ figcaption {
      height: auto;
      width: 80%;
   }
-  .secondpart {
+  */
 
-    padding-left: 0em;
+  /*.secondpart {
+
+    padding-left: 35%;
     padding-bottom: 0em;
   }
+  */
 
   .content {
     padding: 1.2em 5% 2em 5%;
   }
 
   .content>p{
-    width:88%;
+    width:63%;
     margin:auto;
+    text-align: justify;
+    line-height: 2.25;
+    font-size: 1.1em;
   }
 
 
@@ -290,18 +209,12 @@ figcaption {
 
    .title{
     /*display: inline-block;*/
-    width: 30%;
+    font-size:1.5em;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
-<<<<<<< HEAD
     background-color: #F7F5F0;
-    padding: 1em 0em 1em 0em;
-=======
-    background-color: #F8F8FF;
-    padding: 1em 0em 0em 0em;
-    border-bottom: 1px solid;
-    padding-bottom: 5px;
->>>>>>> master
+    padding: 2em 0em 0em 0em;
   }
 
   .eventimage{
@@ -340,8 +253,8 @@ figcaption {
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
     opacity: 0;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
     color: #333;
 }
 
@@ -439,7 +352,6 @@ figcaption {
   }
   
 }
-
 
 
 
