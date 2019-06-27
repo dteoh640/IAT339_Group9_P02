@@ -5,7 +5,7 @@
 }
 body {
   /*font-size: 48px;*/
-  background-color: #f0eee8;
+  background-color: #F7F5F0;
   margin: auto;
   font-family: sans-serif;
 /*  padding: 2rem;*/
@@ -28,7 +28,7 @@ p{
 .checkout {
   position: sticky;
   top:0;
-  background-color: #f0eee8;
+    background-color: #F7F5F0;
   z-index: 10;
 
   padding-top: .1em;
