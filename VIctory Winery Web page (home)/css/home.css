@@ -61,13 +61,13 @@ figcaption {
 
 
 
-
+/*Navigation Bar and Logo*/
 .brand{
-
+    z-index: 2;
     width:88%;
     margin:auto;
-    z-index: 2;
-    display: flex;
+    height:auto;
+    display:flex;
     justify-content: space-between;
     
 }
@@ -75,31 +75,25 @@ figcaption {
   width: 35%;
   height: auto;
   z-index: 10;
-  transition: 1s;
+  padding-top:.5em;
 }
 
 .navbar ul{
-    margin: 0 0 0 0 ;
-
-    display:flex;
-    overflow:hidden;  
-    list-style-type:none;
-    
-    font-family: "Garamond", serif;
-
-    top:0.5em;
-    z-index: 2;
-    padding-top: .6em;
-    padding-left: 20px;
-    width:100%;
+  display:flex;
+  overflow:hidden;  
+  list-style-type:none;
+  margin-top:.75em;
+  padding:0;
+  width:100%;
 }
 
 .navbar ul li{
-    padding:.5rem 3.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .11em;
-    font-size: 15px;
+  font-family: "Palatino", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  padding:.5em 3.5em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .11em;
+    font-size: 1rem;
 }
 
 .navbar>ul>li>a{
@@ -135,7 +129,7 @@ figcaption {
 
   .video video {
     position: relative;
-    top: -2.3em;
+    top: -5.55em;
     width: 100%;
     height: auto;
     z-index: -1;

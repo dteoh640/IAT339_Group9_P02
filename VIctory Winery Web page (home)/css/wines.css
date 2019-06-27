@@ -107,7 +107,7 @@ main{
     z-index:1;
 }*/
 
-.productlist h1{
+.featuredTitle h1{
     position: relative;
     font-family: "Garamond", serif;
     letter-spacing: .11em;
@@ -120,7 +120,7 @@ main{
     z-index:1;
 }
 
-.productlist .addbtn1{
+.featuredTitle .addbtn1{
     position: relative;
     letter-spacing: .1em;
     font-size: 1em;
@@ -135,11 +135,11 @@ main{
     transition:background-color 0.25s;
 }
 
-.productlist>button>span{
+.featuredTitle>button>span{
     padding-right:3.5em;
 }
 
-.productlist button:hover, .productlist button:focus, .productlist button:active{
+.featuredTitle button:hover, .featuredTitle button:focus, .featuredTitle button:active{
     text-decoration: none;
     background-color: #210e03;
     border:1.5px solid #210e03;

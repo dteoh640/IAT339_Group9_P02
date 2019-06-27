@@ -70,47 +70,16 @@ body{
 
 
 /* contact */
-
-
-footer {
-  background-color: #f0eee8;
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content:space-around;
-  padding-left: 11%;
-  padding-right: 11%: 
-
-
-}
-
-
-footer div {
-  padding-top: 2em;
-  flex: 1 1 auto;
-  /*margin: 80px 50px 80px 50px;*/
-  line-height: 2;
-  width: 30%;
-  min-width: 200px;
-  height: auto;
-  background-color: #f0eee8;
-}
-
-.text span {
-   color: #a68676;
-}
-
-.text p a {
-  color: black;
-  text-decoration-color: #a68676;
-}
-
-.text p a:hover{
-  color: #e5bf76;
-  
+footer .copyright{
+  width:100%;
+  margin:auto;
+  padding:1em;
+  font-family: "Garamond", serif;
+  font-size:.88em;
+  text-align: center;
 }
 
 .logo {
- /* padding-top: 1em;*/
   width: 4em;
   height: auto;
 }
