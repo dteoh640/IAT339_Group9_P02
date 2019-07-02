@@ -232,13 +232,18 @@ main{
     margin: 20em 0 0 1em;
   }
 
-   .review-title{
+     .review-title {
         display: block;
         width: 100%;
+         letter-spacing: .11em;
         font-size: 32px;
+        text-transform: capitalize;
+        
+        font-family: "Garamond", serif;
         border-bottom: 1px solid;
+        border-bottom-color: #a68676;
         padding-bottom: 5px;
-        color: black;
+        color: #a68676;
   }
 
   form {

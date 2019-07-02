@@ -123,26 +123,34 @@ select {
 
 
 .btn {
-  background-color: #4CAF50;
+  display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-
-  padding: 12px 10% 12px 10%;
-  margin: 20px 35% 10px 35%;
-  border: none;
-  /*width: 30%;*/
   border-radius: 3px;
   text-align: center;
   cursor: pointer;
-/*  font-size: 17px;*/
-  width: 100%;
+  width: auto;
+  margin: auto;
+  border:3px solid #1F1010; 
+  color:#1F1010; 
+                    
+  background-color:rgba(255, 255, 255, 0.5); 
+  font-size:75%; 
+  font-weight:bold; 
+  padding:5px 10px;
 
 
 }
 
 .btn:hover {
-  background-color: #45a049;
+  background-color: #a68676;
+  color: white;
+}
+
+.confirmed-information {
+  margin: 10em auto;
+  width: 500px;
 }
 
 table{

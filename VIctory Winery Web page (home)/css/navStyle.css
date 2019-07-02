@@ -37,6 +37,7 @@ body{
 .navbar ul li{
     padding:.5em 3.5em;
     text-align: center;
+    font-family: "Palatino", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
     text-transform: uppercase;
     letter-spacing: .11em;
     font-size: .9em;
