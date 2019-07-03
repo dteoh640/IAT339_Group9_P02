@@ -82,7 +82,7 @@ main{
 
 .featuredTitle{
     position: absolute;
-    top:10%;
+    top:5%;
     left:57%;
     letter-spacing: .2em;
     font-size: .77em;
@@ -91,19 +91,6 @@ main{
     color: #210e03;
     z-index:1;
 }
-
-/*
-.productlist .subtitle{
-    position: absolute;
-    top:10%;
-    left:57%;
-    letter-spacing: .2em;
-    font-size: .77em;
-    font-weight: 100;
-    text-transform: uppercase;
-    color: #210e03;
-    z-index:1;
-}*/
 
 .featuredTitle h1{
     position: relative;
@@ -281,17 +268,51 @@ main{
   background-color: #a68676;
   color: white;
 }
-  
 
-/*
-footer{
-    background-color: #F7F5F0;
-    width:100%;
-    margin: 12px auto;
-    text-align: center;
-    font-family: "Garamond", serif;
-    font-size:.8em;
-    letter-spacing: .05em;
-    color:#210e03;
+
+@media (max-width: 1000px) {
+    main{
+        width:100%;
+        display: block;
+    }
+
+    .typesofwines{
+        width:100%;
+        background-color:#fffdf7;
+        margin-top:2em;
+        position: sticky;
+        top:0;
+        z-index: 10;
+    }
+    
+    .typesofwines ul{
+        display:inline-block;  
+        list-style-type:none;
+        padding:1em;
+        text-align: center;
+        position: sticky;
+        width: 100%;
+        margin:0px auto;
+    }
+
+    .typesofwines ul li{
+        display:inline;
+        padding:0 4em;
+        font-size: .82em;
+    }
+
+    .productlist{
+        flex:100%;
+        margin-top:2em;
+        position: relative;
+    }
+
+    .productlist .sentences{
+        width:70%;
+        font-size: 1.1em;
+    }
+
+    .listRow div p{
+        font-size: 1.4em;
+    }
 }
-*/
