@@ -1,0 +1,61 @@
+
+
+
+
+
+
+h1 {
+   font-family: "Garamond", serif;
+   font-weight: 1;
+    color: #a68676;
+}
+
+h2  {
+    font-family: "Garamond", serif;
+    font-size: 32px;
+    font-weight: 1;
+}
+
+
+.events{
+  background-color: white;
+}
+.eventlist {
+  padding: 2em;
+
+}
+
+
+
+.eventlist p {
+  width: 66%;
+  font-size:18px;
+  line-height: 1.5;
+  margin-top: 2em;
+}
+
+@media (max-width: 510px) {
+ 
+.eventlist p {
+  width: 100%;
+}
+.events{
+  margin-top: -2em;
+  }
+}
+
+.images {
+  display: inline-block;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+
+}
+
+.images img {
+  width: 100px;
+  height: auto;
+
+  flex: 1 1 400px;
+}

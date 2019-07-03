@@ -17,30 +17,51 @@ body{
 
 
 /*Logo*/
-.brand{
-    width:88%;
-    margin:auto;
-    height:auto;
-    display:flex;
-    justify-content: space-between;
+
+
+.bg-nav {
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: -24px;
 }
 
-/*Navigation Bar*/
+
+
+.brand img{
+ 
+  width: 10%;
+  height: auto;
+  margin-left: 6%;
+  }
+
+
+.navbar {
+  position: fixed;
+  width:100%;
+  top: 24px;
+  z-index: 2;
+  
+}
+
 .navbar ul{
-    display:flex;
-    overflow:hidden;  
-    list-style-type:none;
-    padding:0;
-    width:100%;
+  display: block;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:flex-end;
+  overflow:hidden;  
+  list-style-type:none;
+  margin: auto;
+  padding:0;
+  width:auto;
 }
 
 .navbar ul li{
-    padding:.5em 3.5em;
-    text-align: center;
-    font-family: "Palatino", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: .11em;
-    font-size: .9em;
+  font-family: "Palatino", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  padding:.5em 3.5em;
+
+  text-transform: uppercase;
+  flex: 0, 1, auto;
+  letter-spacing: .11em;
+  font-size: 1rem;
 }
 
 .navbar>ul>li>a{
@@ -70,6 +91,31 @@ body{
 }
 
 
+ @media (max-width: 510px) {
+.navbar ul{
+ 
+  justify-content:space-around;
+
+}
+
+.navbar ul li{
+
+    /*flex: 1 1 auto;*/
+    font-size: 0.6rem;
+  }
+
+
+
+  .brand img {
+    width: 0%
+    
+    /*text-align: center;*/
+  }
+
+  }
+
+
+
 /* contact */
 footer .copyright{
   width:100%;
@@ -84,6 +130,7 @@ footer .copyright{
   width: 4em;
   height: auto;
 }
+
 
 /*.text p{
   font-size: 14px;

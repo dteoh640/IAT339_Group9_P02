@@ -62,38 +62,55 @@ figcaption {
 
 
 /*Navigation Bar and Logo*/
-.brand{
-    z-index: 2;
-    width:88%;
-    margin:auto;
-    height:auto;
-    display:flex;
-    justify-content: space-between;
+
+
+.brand img {
+  display: inline-block;
+  width: 25%;
+  height: auto;
+  margin-left: 1em;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+
+}
+
+.bg-nav {
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: -0.5em;
     
 }
-.brand img {
-  width: 35%;
-  height: auto;
-  z-index: 10;
-  padding-top:.5em;
+
+
+.navbar {
+  position: fixed;
+  width:100%;
+  top: 0.5em;
+  z-index: 2;
+
+ /* padding: 0.5em 0 0 0  ;*/
 }
 
 .navbar ul{
+  display: block;
   display:flex;
+  flex-wrap: wrap;
+  justify-content:flex-end;
   overflow:hidden;  
   list-style-type:none;
-  margin-top:.75em;
+  margin: auto;
   padding:0;
-  width:100%;
+  width:auto;
 }
 
 .navbar ul li{
   font-family: "Palatino", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
   padding:.5em 3.5em;
-  text-align: center;
+  /*text-align: center;*/
   text-transform: uppercase;
+  flex: 0, 1, auto;
   letter-spacing: .11em;
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .navbar>ul>li>a{
@@ -123,13 +140,33 @@ figcaption {
 }
 
 
+ @media (max-width: 510px) {
+.navbar ul{
+   justify-content:space-around;
+}
+
+.navbar ul li{
+
+    font-size: 0.6rem;
+  }
+
+
+
+  .brand img {
+    margin: 0 0 0 40%;
+ 
+  }
+
+  }
+
+
 /* 
   video section*/
 
 
   .video video {
-    position: relative;
-    top: -2.55em;
+/*    position: relative;
+    top: -2.55em;*/
     width: 100%;
     height: auto;
     z-index: -1;
