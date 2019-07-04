@@ -1,0 +1,154 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Palatino", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    background-color: #F7F5F0;
+    line-height: 1.15;
+    scroll-behavior: smooth;
+}
+
+body{
+    width:100%;
+    margin:auto;
+    padding-top:1em;
+}
+
+
+/*Logo*/
+
+
+.bg-nav {
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: -24px;
+}
+
+
+
+.brand img{
+ 
+  width: 10%;
+  height: auto;
+  margin-left: 6%;
+  }
+
+
+.navbar {
+  position: fixed;
+  width:100%;
+  top: 24px;
+  z-index: 2;
+  
+}
+
+.navbar ul{
+  display: block;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:flex-end;
+  overflow:hidden;  
+  list-style-type:none;
+  margin: auto;
+  padding:0;
+  width:auto;
+}
+
+.navbar ul li{
+  font-family: "Palatino", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  padding:.5em 3.5em;
+
+  text-transform: uppercase;
+  flex: 0 1 auto;
+  letter-spacing: .11em;
+  font-size: 1rem;
+}
+
+.navbar>ul>li>a{
+    text-decoration: none;
+    background: linear-gradient(to bottom, #a68676 0%, #210e03 100%); /*https://codepen.io/leocampos/pen/pPwwNR*/
+    -webkit-background-clip: text; /*https://codepen.io/leocampos/pen/pPwwNR*/
+    -webkit-text-fill-color: transparent; /*https://codepen.io/leocampos/pen/pPwwNR*/
+    color: #a68676;
+}
+
+.selected{
+    background: linear-gradient(to bottom, #f5dfb0 0%, #e5bf76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#e5bf76;
+    text-decoration: none;
+    border-bottom: 2.5px solid #e5bf76;
+    font-weight:bold;
+}
+
+.navbar a:hover, .navbar a:focus, .navbar a:active {
+    background: linear-gradient(to bottom, #f5dfb0 0%, #e5bf76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#e5bf76;
+    text-decoration: none;
+}
+
+
+ @media (max-width: 510px) {
+.navbar ul{
+ 
+  justify-content:space-around;
+
+}
+
+.navbar ul li{
+
+    /*flex: 1 1 auto;*/
+    font-size: 0.6rem;
+  }
+
+
+
+  .brand img {
+    width: 0%
+    
+    /*text-align: center;*/
+  }
+
+  }
+
+
+
+/* contact */
+footer .copyright{
+  width:100%;
+  margin:auto;
+  padding:1em;
+  font-family: "Garamond", serif;
+  font-size:.88em;
+  text-align: center;
+}
+
+.logo {
+  width: 4em;
+  height: auto;
+}
+
+
+/*.text p{
+  font-size: 14px;
+  padding-top: 5em;
+
+}*/
+
+
+@media (max-width: 700px) {
+  
+  .imgContainer{
+    order: 1;
+    
+  }
+
+  footer div {
+     margin: 50px 50px 50px 50px;
+  }
+  
+}
+  
