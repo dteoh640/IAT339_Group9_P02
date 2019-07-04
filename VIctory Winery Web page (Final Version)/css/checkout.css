@@ -1,14 +1,6 @@
-*/
-*, *::after, *::before{
-  box-sizing: border-box;
 
-}
 body {
-  /*font-size: 48px;*/
   background-color: #F7F5F0;
-  margin: auto;
-  font-family: sans-serif;
-/*  padding: 2rem;*/
 
 }
 
@@ -36,8 +28,8 @@ p{
 }
 
 .checkoutBar {
-	text-align: center;
-	
+  text-align: center;
+  
 }
 
 .checkoutBar .bar {
@@ -48,7 +40,7 @@ p{
 
 
 .checkoutTruck .truck {
-	width: 8%;
+  width: 8%;
 }
 
 .checkoutTruck {
@@ -62,6 +54,8 @@ p{
 
 /*checkout steps*/
 
+
+
 .row{
   
   display: flex;
@@ -71,7 +65,7 @@ p{
 }
 
 .container{
-
+  width: 100%;
   background-color: #f0eee8;
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
@@ -114,7 +108,7 @@ select {
   margin-bottom: 20px;
    height: 39px;
    overflow: hidden;
-   width: 240px;
+   /*width: 240px;*/
 }
 
 
@@ -145,8 +139,9 @@ select {
 }
 
 .confirmed-information {
-  margin: 10em auto;
-  width: 500px;
+  margin: 8em auto;
+  padding: 2em;
+  max-width: 500px;
 }
 
 table{
@@ -169,15 +164,19 @@ table tr td{
 
 table tr .wrapping{
   display:flex;
+  margin-left: 42%;
 }
 
 table tr td img{
   border-radius: 10%;
+  width:20%;
+  height:20%;
+  margin:auto 1em;
 }
 
 table tr td>p{
   flex-wrap: wrap;
-  padding:2.5em 0em 0em 2em;
+  margin:auto 1em;
   font-family: "Garamond", serif;
   font-size: 1.2em;
 }
@@ -200,27 +199,34 @@ td button{
     font-weight: 600;
     color:#210e03;
     border:1.5px solid #e5bf76;
-    border-radius: 20px;
-    padding:1.5em .5em;
+    border-radius: 15px;
+    padding:1em .5em;
     transition:background-color 0.25s;
     margin:0 1em;
 }
 
 td button:hover, td button:active, td button:focus{
   text-decoration: none;
-    background-color: #210e03;
-    border:1.5px solid #210e03;
-    color: #a68676;
+    border:1.5px solid #aa0000;
+    color: #990000;
 }
 
 .centeringObject{
   margin:auto;
   text-align: center;
+   padding:2em;
+}
+
+.spacing {
+  padding:80px;
 }
 
 .spacingSection{
+  /*position: relative;*/
+  border: 1px solid black;
   margin:auto;
-  padding:2em 0;
+  width: 100%;
+  padding:2em;
 }
 
 td>span{
@@ -232,4 +238,57 @@ td>span{
 .rightAlignment{
   text-align: right;
 }
+
+.proceedButtonSpacing{
+  width:70%;
+  margin:1em auto;
+  text-align: center;
+}
+
+.proceed_to_checkout{
+  margin: auto;
+  letter-spacing: .1em;
+    font-size: .9em;
+    text-transform: capitalize;
+    background: none;
+    font-weight: 600;
+    color:#210e03;
+    border:1.5px solid #e5bf76;
+    border-radius: 15px;
+    padding:1em 1.5em;
+    transition:background-color 0.25s;
+    margin:0 1em;
+}
+
+.proceed_to_checkout:hover, .proceed_to_checkout:active, .proceed_to_checkout:focus{
+  text-decoration: none;
+    background-color: #210e03;
+    border:1.5px solid #210e03;
+    color: #a68676;
+}
+
+
+
+@media (max-width: 700px)  {
+  
+  .spacing  {
+    display: none;
+  }
+
+
+}
+
+
+@media (max-width: 500px) { 
+.row{
+  padding: 10px;
+}
+
+
+
+  }
+
+
+
+
 

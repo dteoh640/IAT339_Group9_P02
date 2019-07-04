@@ -23,14 +23,13 @@ body {
 h1 {
    font-family: "Garamond", serif;
    font-weight: 1;
-  /* font-size: 48px;*/
     color: #a68676;
 }
 
 h2  {
      font-family: "Garamond", serif;
-  font-size: 32px;
-  font-weight: 1;
+    font-size: 32px;
+    font-weight: 1;
 }
 
 
@@ -154,7 +153,8 @@ figcaption {
 
   .brand img {
     margin: 0 0 0 40%;
- 
+    /*display: block;*/
+    /*text-align: center;*/
   }
 
   }
@@ -165,7 +165,7 @@ figcaption {
 
 
   .video video {
-/*    position: relative;
+  /*  position: relative;
     top: -2.55em;*/
     width: 100%;
     height: auto;
@@ -238,7 +238,7 @@ figcaption {
 
 
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1550px) {
   
   .imagecontent img{
      position: relative;

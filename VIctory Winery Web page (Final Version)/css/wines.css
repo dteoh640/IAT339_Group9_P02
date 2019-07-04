@@ -8,11 +8,13 @@ main{
 
 .typesofwines{
     flex:22%;
+
     background:#fffdf7;
     margin-top:2em;
 }
 
 .typesofwines ul{
+
     display:block;  
     list-style-type:none;
     padding:5em 0;
@@ -82,6 +84,7 @@ main{
 
 .featuredTitle{
     position: absolute;
+ /*   width: 50%;*/
     top:10%;
     left:57%;
     letter-spacing: .2em;
@@ -136,6 +139,13 @@ main{
 .featuredTitle>button>span{
     padding-right:3.5em;
 }
+
+.featuredTitle button:hover, .featuredTitle button:focus, .featuredTitle button:active{
+    text-decoration: none;
+    background-color: #210e03;
+    border:1.5px solid #210e03;
+    color: #a68676;
+} 
 
 .productlist button:hover, .productlist button:focus, .productlist button:active{
     text-decoration: none;
@@ -223,6 +233,15 @@ main{
         display:block;
         margin:auto;
     }
+    .typesofwines {
+        display:none;
+    }
+
+    .featuredTitle {
+         display:none;
+    }
+
+   
     
   }
 
@@ -230,7 +249,9 @@ main{
     margin: 20em 0 0 1em;
   }
 
-     .review-title {
+  
+
+   .review-title {
         display: block;
         width: 100%;
          letter-spacing: .11em;
@@ -283,15 +304,3 @@ main{
 }
   
 
-/*
-footer{
-    background-color: #F7F5F0;
-    width:100%;
-    margin: 12px auto;
-    text-align: center;
-    font-family: "Garamond", serif;
-    font-size:.8em;
-    letter-spacing: .05em;
-    color:#210e03;
-}
-*/
