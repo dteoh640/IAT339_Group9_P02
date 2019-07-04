@@ -7,12 +7,13 @@
         <link rel="icon" type="image/ico" href="img/headLogo.png"/>
         <link rel="stylesheet" href="css/navStyle.css">
         <link rel="stylesheet" href="css/wines.css">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     </head>
 
     <body>
         <heading>
             <section class="brand">
-                <a href="home.html" alt="home"><img src="img/brandv2.png" alt="" ></a>
+                <a href="home.html" alt="home"><img src="img/brandv2.png" alt="" id="top"></a>
                 <nav class="navbar">
                     <ul>
                         <li><a href="home.html" alt="Home">Home</a></li>
@@ -32,6 +33,11 @@
                     <li><a href="#rosewine">Rose Wine</a></li>
                 </ul>
             </section>
+
+            <section class="returnTop">
+                <a href="#top" alt="top"><i class='fas fa-arrow-alt-circle-up'></i></a>
+            </section>
+
             <section class="productlist">
                 <img src="img/featuredWinev2.jpg" alt="featured wine" width="65%" id="featured">
                 <h3>Wines</h3>
@@ -132,12 +138,15 @@
 
         </section>
     </section>
+
         </main>
 
        <!-- contact section in footer -->
       <footer> 
           <p class="copyright">© Copyright 2019 Victor Winery </p>
           </footer>
+          
+    
 
           <script
   src="https://code.jquery.com/jquery-3.4.1.js"

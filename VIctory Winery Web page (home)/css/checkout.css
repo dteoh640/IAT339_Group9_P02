@@ -1,14 +1,6 @@
-*/
-*, *::after, *::before{
-  box-sizing: border-box;
 
-}
 body {
-  /*font-size: 48px;*/
   background-color: #F7F5F0;
-  margin: auto;
-  font-family: sans-serif;
-/*  padding: 2rem;*/
 
 }
 
@@ -261,5 +253,16 @@ td>span{
     background-color: #210e03;
     border:1.5px solid #210e03;
     color: #a68676;
+}
+
+
+@media (max-width: 1000px) {
+
+  .navbar ul li{
+  
+      /*flex: 1 1 auto;*/
+      font-size: .8em;
+    }
+  
 }
 
